@@ -1,5 +1,6 @@
-body {
+html, body {
     width: 100%;
+    scroll-behavior: smooth;
 }
 
 .banner {
@@ -101,6 +102,35 @@ li {
     content: "70%";
     width: 70%;
     background-color: rgb(228, 116, 180);
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 35px;
+    height: 35px;
+    background-color: #fff;
+    border: 1px solid black;
+    text-decoration: none;
+}
+
+.btn::after {
+    content: "↑";
+    font-size: 32px;
+    font-weight: bold;
+    transition: margin-top 250ms;
+}
+
+.btn:hover {
+    background-color: #fff;
+    border: 1px solid black;
+}
+.btn:hover::after {
+    margin-top: -8px;
 }
 
 footer {
